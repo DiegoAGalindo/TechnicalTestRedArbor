@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TechnicalTestRedArbor", "TechnicalTestRedArbor\TechnicalTestRedArbor.csproj", "{29A258EA-14B6-41E8-BCB3-DFEC7C5F40B1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TechnicalTestRedArbor.Tests", "TechnicalTestRedArbor.Tests\TechnicalTestRedArbor.Tests.csproj", "{97A6959E-DD39-460C-AFDA-F8656443C9B4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{29A258EA-14B6-41E8-BCB3-DFEC7C5F40B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29A258EA-14B6-41E8-BCB3-DFEC7C5F40B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29A258EA-14B6-41E8-BCB3-DFEC7C5F40B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29A258EA-14B6-41E8-BCB3-DFEC7C5F40B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97A6959E-DD39-460C-AFDA-F8656443C9B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97A6959E-DD39-460C-AFDA-F8656443C9B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97A6959E-DD39-460C-AFDA-F8656443C9B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97A6959E-DD39-460C-AFDA-F8656443C9B4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E5A3EE1F-90F4-402E-A500-D7345298E7D3}
+	EndGlobalSection
+EndGlobal
