@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace TechnicalTestRedArbor.Services.LoggerService
+﻿namespace TechnicalTestRedArbor.Services.LoggerService
 {
     public interface ILoggerManager
     {
