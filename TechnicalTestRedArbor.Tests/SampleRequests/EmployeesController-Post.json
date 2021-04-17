@@ -1,0 +1,36 @@
+{
+  "resource": "/{proxy+}",
+  "path": "/api/redarbor",
+  "httpMethod": "POST",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "queryStringParameters": null,
+  "pathParameters": {
+    "proxy": "api/redarbor"
+  },
+  "stageVariables": null,
+  "requestContext": {
+    "accountId": "AAAAAAAAAAAA",
+    "resourceId": "5agfss",
+    "stage": "test-invoke-stage",
+    "requestId": "test-invoke-request",
+    "identity": {
+      "cognitoIdentityPoolId": null,
+      "accountId": "AAAAAAAAAAAA",
+      "cognitoIdentityId": null,
+      "caller": "BBBBBBBBBBBB",
+      "apiKey": "test-invoke-api-key",
+      "sourceIp": "test-invoke-source-ip",
+      "cognitoAuthenticationType": null,
+      "cognitoAuthenticationProvider": null,
+      "userArn": "arn:aws:iam::AAAAAAAAAAAA:root",
+      "userAgent": "Apache-HttpClient/4.5.x (Java/1.8.0_102)",
+      "user": "AAAAAAAAAAAA"
+    },
+    "resourcePath": "/{proxy+}",
+    "httpMethod": "POST",
+    "apiId": "t2yh6sjnmk"
+  },
+  "body": "{\"CompanyId\":1,\"CreatedOn\":\"2000-01-01T00:00:00\",\"DeletedOn\":\"2000-01-01T00:00:00\",\"Email\":\"test1@test.test.tmp\",\"Fax\":\"000.000.000\",\"Name\":\"test1\",\"Lastlogin\":\"2000-01-01T00:00:00\",\"Password\":\"test\",\"PortalId\":1,\"RoleId\":1,\"StatusId\":1,\"Telephone\":\"000.000.000\",\"UpdatedOn\":\"2000-01-01T00:00:00\",\"Username\":\"test1\"}"
+}

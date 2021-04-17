@@ -22,7 +22,7 @@ namespace TechnicalTestRedArbor.Models
         public int RoleId { get; set; }
         public int StatusId { get; set; }
         public string Telephone { get; set; }
-        public DateTime? UpdatedOn { get; set; }
+        public DateTime UpdatedOn { get; set; }
         public string Username { get; set; }
     }
 }

@@ -1,11 +1,11 @@
 {
   "resource": "/{proxy+}",
-  "path": "/api/values",
-  "httpMethod": "GET",
+  "path": "/api/redarbor",
+  "httpMethod": "DELETE",
   "headers": null,
   "queryStringParameters": null,
   "pathParameters": {
-    "proxy": "api/values"
+    "proxy": "api/redarbor"
   },
   "stageVariables": null,
   "requestContext": {
@@ -27,7 +27,7 @@
       "user": "AAAAAAAAAAAA"
     },
     "resourcePath": "/{proxy+}",
-    "httpMethod": "GET",
+    "httpMethod": "DELETE",
     "apiId": "t2yh6sjnmk"
   },
   "body": null
