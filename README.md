@@ -6,7 +6,7 @@
 
 El proyecto se encuentra configurado para funcionar con una base de datos que se encuentra online y al descargar el código puede ser ejecutado desde el visual estudio. 
 
-Si se desea se puede crear una base de datos en SQL server y ejecutar el scritp inicial el cual se encuentra en la siguiente ruta 
+Si se desea se puede crear una base de datos en SQL server y ejecutar el script inicial el cual se encuentra en la siguiente ruta 
 
 https://github.com/DiegoAGalindo/TechnicalTestRedArbor/blob/main/SQL/ScriptInicial.sql 
 
