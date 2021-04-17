@@ -17,14 +17,14 @@ namespace TechnicalTestRedArbor.Repositories
             _connectionString = configuration.GetConnectionString("DefaultConnection");
         }
 
-        public async Task DeleteById(int Id)
+        public async Task DeleteById(int id)
         {
             await using var sql = new SqlConnection(_connectionString);
-            await using var cmd = new SqlCommand("DeleteValue", sql)
+            await using var cmd = new SqlCommand("DeleteEmployeeById", sql)
             {
                 CommandType = System.Data.CommandType.StoredProcedure
             };
-            cmd.Parameters.Add(new SqlParameter("@Id", Id));
+            cmd.Parameters.Add(new SqlParameter("@Id", id));
             await sql.OpenAsync();
             await cmd.ExecuteNonQueryAsync();
         }
@@ -48,14 +48,14 @@ namespace TechnicalTestRedArbor.Repositories
             return response;
         }
 
-        public async Task<ResponseEmployee> GetById(int Id)
+        public async Task<ResponseEmployee> GetById(int id)
         {
             await using var sql = new SqlConnection(_connectionString);
             await using var cmd = new SqlCommand("GetEmployeeById", sql)
             {
                 CommandType = System.Data.CommandType.StoredProcedure
             };
-            cmd.Parameters.Add(new SqlParameter("@Id", Id));
+            cmd.Parameters.Add(new SqlParameter("@Id", id));
             ResponseEmployee response = null;
             await sql.OpenAsync();
 
@@ -94,7 +94,7 @@ namespace TechnicalTestRedArbor.Repositories
             var id = 0;
             while (await reader.ReadAsync())
             {
-                id = (int)reader["Id"];
+                id = Convert.ToInt32(reader["Id"]);
             }
 
             return id;
@@ -123,28 +123,27 @@ namespace TechnicalTestRedArbor.Repositories
             cmd.Parameters.Add(new SqlParameter("@UpdatedOn", requestEmployee.UpdatedOn));
             cmd.Parameters.Add(new SqlParameter("@Username", requestEmployee.Username));
             await sql.OpenAsync();
-            await using var reader = await cmd.ExecuteReaderAsync();
             await cmd.ExecuteNonQueryAsync();
         }
 
-        private ResponseEmployee MapToValue(IDataRecord reader)
+        private static ResponseEmployee MapToValue(IDataRecord reader)
         {
             return new ResponseEmployee()
             {
                 Id = (int)reader["Id"],
                 CompanyId = (int)reader["CompanyId"],
-                CreatedOn = (DateTime)reader["CreatedOn"],
-                DeletedOn = (DateTime)reader["DeletedOn"],
+                CreatedOn = (reader["CreatedOn"] == DBNull.Value) ? new DateTime() : (DateTime)reader["CreatedOn"],
+                DeletedOn = (reader["DeletedOn"] == DBNull.Value) ? new DateTime() : (DateTime)reader["DeletedOn"],
                 Email = reader["Email"].ToString(),
                 Fax = reader["Fax"].ToString(),
-                LastLogin = (DateTime)reader["LastLogin"],
+                LastLogin = (reader["LastLogin"] == DBNull.Value) ? new DateTime() : (DateTime)reader["LastLogin"],
                 Name = reader["Name"].ToString(),
                 Password = reader["Password"].ToString(),
                 PortalId = (int)reader["PortalId"],
                 RoleId = (int)reader["RoleId"],
                 StatusId = (int)reader["StatusId"],
                 Telephone = reader["Telephone"].ToString(),
-                UpdatedOn = reader["UpdatedOn"].ToString(),
+                UpdatedOn = (reader["UpdatedOn"] == DBNull.Value) ? new DateTime() : (DateTime)reader["UpdatedOn"],
                 Username = reader["Username"].ToString()
             };
         }

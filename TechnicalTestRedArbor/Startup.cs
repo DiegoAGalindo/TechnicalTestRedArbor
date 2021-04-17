@@ -52,6 +52,7 @@ namespace TechnicalTestRedArbor
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddSingleton<EmployeeRepository>();
+
             services.AddControllers();
 
             services.AddSwaggerGen(c =>

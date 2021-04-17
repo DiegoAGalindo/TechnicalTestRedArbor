@@ -15,7 +15,6 @@ namespace TechnicalTestRedArbor.Models
         public string Fax { get; set; }
 
         public int Id { get; set; }
-
         public DateTime LastLogin { get; set; }
         public string Name { get; set; }
         public string Password { get; set; }
@@ -23,7 +22,7 @@ namespace TechnicalTestRedArbor.Models
         public int RoleId { get; set; }
         public int StatusId { get; set; }
         public string Telephone { get; set; }
-        public string UpdatedOn { get; set; }
+        public DateTime? UpdatedOn { get; set; }
         public string Username { get; set; }
     }
 }
