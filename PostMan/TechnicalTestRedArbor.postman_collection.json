@@ -1,0 +1,130 @@
+{
+	"info": {
+		"_postman_id": "04d1b8f0-8672-44b4-b77a-5b5497b8d5ce",
+		"name": "TechnicalTestRedArbor",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:59914/api/redarbor",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "59914",
+					"path": [
+						"api",
+						"redarbor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:59914/api/redarbor/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "59914",
+					"path": [
+						"api",
+						"redarbor",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"CompanyId\": 1,\r\n  \"CreatedOn\": \"2000-01-01T00:00:00\",\r\n  \"DeletedOn\": \"2000-01-01T00:00:00\",\r\n  \"Email\": \"test1@test.test.tmp\",\r\n  \"Fax\": \"000.000.000\",\r\n  \"Name\": \"test1\",\r\n  \"Lastlogin\": \"2000-01-01T00:00:00\",\r\n  \"Password\": \"test\",\r\n  \"PortalId\": 1,\r\n  \"RoleId\": 1,\r\n  \"StatusId\": 1,\r\n  \"Telephone\": \"000.000.000\",\r\n  \"UpdatedOn\": \"2000-01-01T00:00:00\",\r\n  \"Username\": \"test1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:59914/api/redarbor",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "59914",
+					"path": [
+						"api",
+						"redarbor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:59914/api/redarbor/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "59914",
+					"path": [
+						"api",
+						"redarbor",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"CompanyId\": 1,\r\n  \"CreatedOn\": \"2000-01-01T00:00:00\",\r\n  \"DeletedOn\": \"2000-01-01T00:00:00\",\r\n  \"Email\": \"test1@test.test.tmp\",\r\n  \"Fax\": \"000.000.000\",\r\n  \"Name\": \"test1\",\r\n  \"Lastlogin\": \"2000-01-01T00:00:00\",\r\n  \"Password\": \"test\",\r\n  \"PortalId\": 1,\r\n  \"RoleId\": 1,\r\n  \"StatusId\": 1,\r\n  \"Telephone\": \"000.000.000\",\r\n  \"UpdatedOn\": \"2000-01-01T00:00:00\",\r\n  \"Username\": \"test1updated\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:59914/api/redarbor/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "59914",
+					"path": [
+						"api",
+						"redarbor",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
